@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.item {
+    width: 200px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+   
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.image:hover {
+    transform: scale(1.1); 
+}
+
+.item-1, .item-3, .item-5, .item-7, .item-9 {
+    align-self: flex-start;
+}
+.item-2, .item-4, .item-6, .item-8, .item-10 {
+    align-self: flex-end;
+}
